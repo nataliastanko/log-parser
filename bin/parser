@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../file_locator'
+require_relative '../command_option_provider'
 
-FileLocator.new(ARGV)
+options_provider = CommandOptionProvider.new ARGV
+p options_provider.options
