@@ -10,4 +10,8 @@ class Parser
   def valid_path?
     File.exist?(@file_path) ? true : false
   end
+
+  def raise_error
+    raise ArgumentError, 'Provide a valid path to your log file' unless valid_path?
+  end
 end
