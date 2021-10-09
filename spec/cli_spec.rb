@@ -12,8 +12,8 @@ RSpec.describe 'CLI ./bin/parser options provided' do
   end
 
   context 'if log file does not exist' do
-    subject { system "./bin/parser #{filename}" }
-    let(:filename) { 'webserver123.log' }
+    subject { system "./bin/parser data/#{filename}" }
+    let(:filename) { 'data/webserver123.log' }
     # let(:file_missing_message) { 'Provide a valid path to your log file' }
     it { expect { subject }.to output.to_stdout_from_any_process }
 
@@ -23,7 +23,7 @@ RSpec.describe 'CLI ./bin/parser options provided' do
   end
 
   context 'if log file does exist' do
-    subject { system './bin/parser webserver.log' }
+    subject { system './bin/parser data/webserver.log' }
 
     it { expect { subject }.to output.to_stdout_from_any_process }
 

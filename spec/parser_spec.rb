@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require_relative '../file_locator'
+require_relative '../lib/file_locator'
 
 RSpec.describe FileLocator do
-  subject(:parser) { described_class.new('webserver.log') }
+  subject(:parser) { described_class.new('data/webserver.log') }
 
   context 'log file does not exist' do
-    subject(:parser) { described_class.new('webserver123.log') }
+    subject(:parser) { described_class.new('data/webserver123.log') }
 
     describe '#valid_path?' do
       it 'returns false' do

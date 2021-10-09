@@ -25,23 +25,26 @@ Expected output example
 
 ## App requirements
 
-- ruby 3.0.2
-- gem dependencies
-
-    bundle install
-
-- permissions
-
-    chmod +x ./bin/parser
+* ruby 3.0.2
+* gem dependencies ```bundle install```
+* permissions ```chmod +x ./bin/parser```
 
 ### Test the app
 
     rspec
     rubocop
 
+## Architecture
+
+```data/``` for data the program works with
+executable files in ```bin/```
+source code in ```lib```
+one class per file
+```spec/``` for tests
+
 ## TODO list
 
 - coverage tests + coverage/ to .gitignore
-- create lib and bin
 - handle exceptions
 - modules group documention
+- parsing the content of the log file + algo

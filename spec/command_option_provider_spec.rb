@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../command_option_provider'
+require_relative '../lib/command_option_provider'
 
 RSpec.describe CommandOptionProvider do
   subject(:option_provider) { described_class.new }
