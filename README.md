@@ -31,8 +31,6 @@ Expected output example
 
 steps
 
-- first test - accept file as argument
-- check for file existence
 - coverage tests + coverage/ to .gitignore
 - create lib and bin
 - handle exceptions

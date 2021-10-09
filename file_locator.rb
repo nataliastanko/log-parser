@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-class Parser
+##
+# Class for locating the file
+class FileLocator
   def initialize(file_path)
     @file_path = file_path
   end

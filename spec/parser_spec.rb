@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../parser'
+require_relative '../file_locator'
 
-RSpec.describe Parser do
+RSpec.describe FileLocator do
   subject(:parser) { described_class.new('webserver.log') }
 
   context 'log file does not exist' do
