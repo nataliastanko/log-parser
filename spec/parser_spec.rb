@@ -19,6 +19,9 @@ RSpec.describe FileLocator do
         expect { subject.send(:raise_error) }.to raise_error(ArgumentError, 'Provide a valid path to your log file')
       end
     end
+
+    describe 'call an executable command' do
+    end
   end
 
   context 'log file does exist' do
